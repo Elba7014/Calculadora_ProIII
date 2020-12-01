@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imgAtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/atras"/>
+    <TextView
+        android:id="@+id/lblToChats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="60dp"
+        android:text="Juan Perez"/>
+
+    <ListView
+        android:id="@+id/ltsChats"
+        android:background="@drawable/fondo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/txtMsg"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="5dp"
+        android:divider="@null"
+        android:stackFromBottom="true" />
+
+    <EditText
+        android:id="@+id/txtMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe un Mensaje..."
+        android:layout_marginRight="90dp"
+        android:layout_alignParentBottom="true"/>
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/send"/>
+</RelativeLayout>
